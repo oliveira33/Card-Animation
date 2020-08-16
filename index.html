@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+    <title>Card Animation</title>
+</head>
+<body>
+    <div style="background-color: #111; width: 100vw; height: 100vh; display:flex; justify-content: center;">
+        <div class="container">
+        <div class="card">
+          <div class="circleCard" style="background-color: #7cad22;"></div>
+          <div class="blockLogo">
+            <img src="https://cdn3.iconfinder.com/data/icons/popular-services-brands/512/html5-512.png">
+          </div>
+          <div class="blockContent">
+            <h1>Curso de HTML 5</h1>
+            <div class="blockPeriodoOptions PeriodoGreen">
+              <h2>Período</h2>
+              <span class="spanGreen" onclick="selecionarOpcao(this, 'PeriodoGreen', '#7cad22')">Diurno</span>
+              <span class="spanGreen" onclick="selecionarOpcao(this, 'PeriodoGreen', '#7cad22')">Noturno</span>
+            </div>
+            <div class="blockUnidadeOptions UnidadeGreen">
+              <h2>Unidade</h2>
+              <span class="spanGreen" onclick="selecionarOpcao(this, 'UnidadeGreen', '#7cad22')">Aclimação</span>
+              <span class="spanGreen" onclick="selecionarOpcao(this, 'UnidadeGreen', '#7cad22')">Paulista</span>
+            </div>
+            <div class="blockInicioOptions InicioGreen">
+              <h2>Início</h2>
+              <span class="spanGreen" onclick="selecionarOpcao(this, 'InicioGreen', '#7cad22')">Janeiro</span>
+              <span class="spanGreen" onclick="selecionarOpcao(this, 'InicioGreen', '#7cad22')">Fevereiro</span>
+              <span class="spanGreen" onclick="selecionarOpcao(this, 'InicioGreen', '#7cad22')">Março</span>
+            </div>
+            <div class="separator"></div>
+            <a class="btnGreen" href="#">Matricule-se</a>
+          </div>
+        </div>
+        <div class="neon" style="background: linear-gradient(235deg, #00ffb2, #444, #00ff9d);"></div>
+      </div>
+        <div class="container">
+        <div class="card">
+          <div class="circleCard" style="background-color: #2256aa;"></div>
+          <div class="blockLogo">
+            <img src="https://cdn3.iconfinder.com/data/icons/popular-services-brands/512/angular-js-512.png">
+          </div>
+          <div class="blockContent">
+            <h1>Curso de Angular</h1>
+            <div class="blockPeriodoOptions PeriodoBlue">
+              <h2>Período</h2>
+              <span class="spanBlue" onclick="selecionarOpcao(this, 'PeriodoBlue', '#1e4789')">Diurno</span>
+              <span class="spanBlue" onclick="selecionarOpcao(this, 'PeriodoBlue', '#1e4789')">Noturno</span>
+            </div>
+            <div class="blockUnidadeOptions UnidadeBlue">
+              <h2>Unidade</h2>
+              <span class="spanBlue" onclick="selecionarOpcao(this, 'UnidadeBlue', '#1e4789')">Faria Lima</span>
+              <span class="spanBlue" onclick="selecionarOpcao(this, 'UnidadeBlue', '#1e4789')">Paulista</span>
+              <span class="spanBlue" onclick="selecionarOpcao(this, 'UnidadeBlue', '#1e4789')">Butantã</span>
+            </div>
+            <div class="blockInicioOptions InicioBlue">
+              <h2>Início</h2>
+              <span class="spanBlue" onclick="selecionarOpcao(this, 'InicioBlue', '#1e4789')">Janeiro</span>
+              <span class="spanBlue" onclick="selecionarOpcao(this, 'InicioBlue', '#1e4789')">Março</span>
+              <span class="spanBlue" onclick="selecionarOpcao(this, 'InicioBlue', '#1e4789')">Maio</span>
+            </div>
+            <div class="separator"></div>
+            <a class="btnBlue" href="#">Matricule-se</a>
+          </div>
+        </div>
+        <div class="neon" style="background: linear-gradient(235deg, #0ff, #444, #0099ff);"></div>
+      </div>
+        <div class="container">
+        <div class="card">
+          <div class="circleCard" style="background-color: #e02121;"></div>
+          <div class="blockLogo">
+            <img src="https://cdn3.iconfinder.com/data/icons/popular-services-brands/512/github-512.png">
+          </div>
+          <div class="blockContent">
+            <h1>Curso de GitHub</h1>
+            <div class="blockPeriodoOptions PeriodoRed">
+              <h2>Período</h2>
+              <span class="spanRed" onclick="selecionarOpcao(this, 'PeriodoRed', '#b70c0c')">Diurno</span>
+              <span class="spanRed" onclick="selecionarOpcao(this, 'PeriodoRed', '#b70c0c')">Noturno</span>
+            </div>
+            <div class="blockUnidadeOptions UnidadeRed">
+              <h2>Unidade</h2>
+              <span class="spanRed" onclick="selecionarOpcao(this, 'UnidadeRed', '#b70c0c')">Pinheiros</span>
+              <span class="spanRed" onclick="selecionarOpcao(this, 'UnidadeRed', '#b70c0c')">Paulista</span>
+              <span class="spanRed" onclick="selecionarOpcao(this, 'UnidadeRed', '#b70c0c')">Centro</span>
+            </div>
+            <div class="blockInicioOptions InicioRed">
+              <h2>Início</h2>
+              <span class="spanRed" onclick="selecionarOpcao(this, 'InicioRed', '#b70c0c')">Janeiro</span>
+              <span class="spanRed" onclick="selecionarOpcao(this, 'InicioRed', '#b70c0c')">Agosto</span>
+            </div>
+            <div class="separator"></div>
+            <a class="btnRed" href="#">Matricule-se</a>
+          </div>
+        </div>
+        <div class="neon"></div>
+      </div>
+      </div>
+</body>
+</html>

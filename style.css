@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+  }
+  h1 {
+    font-weight: normal;
+    color: #eee;
+    font-size: 28px;
+    margin-bottom: 20px;
+    opacity: 0;
+    transition: 300ms ease-in-out;
+  }
+  h2 {
+    font-weight: normal;
+    color: #ddd;
+    font-size: 20px;
+    margin: 10px 0;
+  }
+  .container {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+  }
+  .container .card {
+    background-color: #444;
+    position: absolute;
+    border-radius: 25px;
+    width: 350px;
+    height: 550px;
+    overflow: hidden;
+    z-index: 1;
+  }
+  .container .card .blockLogo {
+    position: relative;
+    top: 50%;
+    transform: translatey(-50%);
+    display: flex;
+    justify-content: center;
+    transition: 300ms ease-in-out;
+  }
+  .container .card .blockLogo img {
+    position: relative;
+    width: 210px;
+    transition: 300ms ease-in-out;
+    z-index: 100;
+  }
+  .container .card .circleCard {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #9BDA2B;
+    clip-path: circle(300px at 50% -2%);
+    transition: 300ms ease-in-out;
+  }
+  .container .card:hover .circleCard  {
+    clip-path: circle(170px at 50% -20%);
+  }
+  .container .card:hover .blockLogo {
+    top: 10%;
+  }
+  .container .card:hover .blockLogo img {
+    width: 100px;
+    transform: rotate(-360deg);
+  }
+  .container .card .blockContent {
+    position: absolute;
+    bottom: 10%;
+    transform: translatey(50%);
+    width: 100%;
+    text-align: center;
+    transition: 300ms;
+    opacity: 0;
+  }
+  .container .card:hover .blockContent {
+    bottom: 45%;
+    opacity: 1;
+  }
+  .container .card .blockContent div {
+    margin: 10px 0 20px 0;
+  }
+  .container .card .blockContent span {
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 12px;
+    color: #111;
+    transition: 90ms ease-in-out;
+  }
+  .container .card .blockContent .spanGreen:hover {
+    background-color: #7cad22;
+    color: #eee;
+    cursor: pointer;
+  }
+  .container .card .blockContent .spanBlue:hover {
+    background-color: #1e4789;
+    color: #eee;
+    cursor: pointer;
+  }
+  .container .card .blockContent .spanRed:hover {
+    background-color: #b70c0c;
+    color: #eee;
+    cursor: pointer;
+  }
+  .container .card .blockContent .spanGreen {
+    border: solid 1px #7cad22;
+  }
+  .container .card .blockContent .spanBlue {
+    border: solid 1px #2256aa;
+  }
+  .container .card .blockContent .spanRed {
+    border: solid 1px #e02121;
+  }
+  .container .card .blockContent .separator {
+    border-bottom: solid 1px #777;
+    margin: 30px;
+  }
+  .container .card .blockContent a {
+    padding: 10px;
+    font-size: 18px;
+    text-decoration: none;
+    color: #eee;
+    border-radius: 5px;
+    text-transform: uppercase;
+  }
+  .container .card .blockContent .btnGreen {
+    background-color: #7cad22;
+  }
+  .container .card .blockContent .btnBlue {
+    background-color: #2256aa;
+  }
+  .container .card .blockContent .btnRed {
+    background-color: #e02121;
+  }
+  .container .card .blockContent .btnGreen:hover {
+    background-color: #7cad22bb;
+  }
+  .container .card .blockContent .btnBlue:hover {
+    background-color: #2256aabb;
+  }
+  .container .card .blockContent .btnRed:hover {
+    background-color: #e02121bb;
+  }
+  .container .card:hover .blockContent h1 {
+    opacity: 1;
+  }
+  
+  .container .neon {
+    background: linear-gradient(235deg, #fc5400, #444, #ef2b2b);
+    position: absolute;
+    border-radius: 35px;
+    width: 360px;
+    height: 560px;
+    filter: blur(15px);
+    z-index: 0;
+    transition: 400ms;
+  }
+  
+  .container .card:hover + .neon {
+    width: 375px;
+    height: 575px;
+    filter: blur(25px);
+  }
