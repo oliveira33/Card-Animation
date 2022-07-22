@@ -3,6 +3,13 @@
     padding: 0;
     font-family: Arial;
   }
+  body > div {
+    background-color: #111; 
+    width: 100vw; 
+    height: 100vh; 
+    display:flex; 
+    justify-content: center;
+  }
   h1 {
     font-weight: normal;
     color: #eee;
@@ -162,4 +169,32 @@
     width: 375px;
     height: 575px;
     filter: blur(25px);
+  }
+
+  @media (max-width: 1024px) {
+    body > div {
+      flex-direction: column;
+      align-items: center;
+      height: auto;
+    }
+
+    body > div > div {
+      height: 600px;
+    }
+  }
+
+  @media (max-width: 375px) {
+    body > div {
+      flex-direction: column;
+      align-items: center;
+      height: auto;
+    }
+
+    body > div > div {
+      height: 600px;
+    }
+
+    .container .card {
+      transform: scale(0.95);
+    }
   }
